@@ -1,2 +1,2 @@
 # pingpong
-ping pong game javascrit
+ping pong game javascript
