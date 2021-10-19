@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #d3d3d3;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+  font-family: "Lemon", cursive;
+  text-transform: uppercase;
+  color: #d3d3d3;
+  text-shadow: -8px -8px 12px rgba(255, 255, 255, 0.4),
+    8px 8px 12px rgba(0, 0, 0, 0.8);
+}
+/* ***********************GAME********************** */
+#game {
+  position: absolute;
+  width: 1088px;
+  height: 544px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 12px solid rgba(50, 50, 50, 0.8);
+  border-radius: 25px;
+  background: black;
+  box-shadow: 12px 12px 15px 0 rgba(0, 0, 0, 0.5),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* *************************SCORE*************************** */
+
+#scoreBlue,
+#scoreRed {
+  position: absolute;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgba(255, 255, 255, 0.2);
+  top: 210px;
+}
+.point {
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+    0 0 25px rgba(255, 255, 255, 0.5), 0 0 50px rgba(255, 255, 255, 0.5);
+}
+
+#scoreBlue {
+  left: 250px;
+}
+#scoreRed {
+  right: 250px;
+}
+
+/* ***********************PADDLE********************** */
+
+#leftPaddle,
+#rightPaddle {
+  position: absolute;
+  width: 15px;
+  height: 70px;
+  border-radius: 5px;
+  transition: 0.1s;
+  /* top: 237px; */
+}
+
+#leftPaddle {
+  background: blue;
+  /* left: 10px; */
+}
+.left {
+  background: blue;
+  box-shadow: 0 0 5px blue, 0 0 25px blue, 0 0 50px blue, 0 0 200px blue;
+}
+
+#rightPaddle {
+  background: red;
+  /* right: 10px; */
+}
+.right {
+  background: red;
+  box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red, 0 0 200px red;
+}
+
+/* ***********************Center Line********************** */
+
+#center {
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  left: 50%;
+  border-right: 2px dashed rgba(255, 255, 255, 0.4);
+  border-left: 2px dashed rgba(255, 255, 255, 0.4);
+}
+
+/* ***********************Ball********************** */
+
+#ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: darkorange;
+  border-radius: 50%;
+  box-shadow: 0 0 5px orange, 0 0 25px orange, 0 0 50px orange, 0 0 200px orange;
+  border: none;
+}
